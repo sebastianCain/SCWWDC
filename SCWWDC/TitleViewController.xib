@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Panton-SemiBold.otf">
+            <string>Panton-SemiBold</string>
+        </mutableArray>
+        <mutableArray key="Panton-Thin.otf">
+            <string>Panton-Thin</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleViewController" customModule="SCWWDC" customModuleProvider="target">
+            <connections>
+                <outlet property="face" destination="jXq-Sd-mDR" id="Ge0-Io-fUC"/>
+                <outlet property="name" destination="ULg-Ea-cNH" id="eph-Xq-o4g"/>
+                <outlet property="scroll" destination="FRH-FC-16M" id="KFu-Fp-16H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wwdc" destination="bq9-sB-fsC" id="539-Hv-ZrZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headshot_large" translatesAutoresizingMaskIntoConstraints="NO" id="jXq-Sd-mDR">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sebastian cain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULg-Ea-cNH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Snx-rD-LHP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Panton-Thin" family="Panton" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWDC SCHOLARSHIP APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq9-sB-fsC">
+                    <rect key="frame" x="0.0" y="450" width="600" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="RSX-d6-YsS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Panton-SemiBold" family="Panton" pointSize="24"/>
+                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRH-FC-16M">
+                    <rect key="frame" x="275" y="525" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="dEO-Dt-ZWV"/>
+                        <constraint firstAttribute="height" constant="50" id="naL-eu-fV3"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jXq-Sd-mDR" secondAttribute="trailing" id="7Qe-WM-Aqz"/>
+                <constraint firstItem="jXq-Sd-mDR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8ca-eG-j0Q"/>
+                <constraint firstAttribute="trailing" secondItem="ULg-Ea-cNH" secondAttribute="trailing" id="9IZ-gh-Cae"/>
+                <constraint firstItem="FRH-FC-16M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C4c-DP-9mE"/>
+                <constraint firstAttribute="trailing" secondItem="bq9-sB-fsC" secondAttribute="trailing" id="I3E-A9-rZl"/>
+                <constraint firstAttribute="bottom" secondItem="FRH-FC-16M" secondAttribute="bottom" constant="25" id="Qqq-8Q-rPl"/>
+                <constraint firstAttribute="bottom" secondItem="bq9-sB-fsC" secondAttribute="bottom" constant="100" id="WDG-Wg-hBI"/>
+                <constraint firstItem="jXq-Sd-mDR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bPm-rY-7wd"/>
+                <constraint firstAttribute="bottom" secondItem="jXq-Sd-mDR" secondAttribute="bottom" id="fBl-Ol-dvh"/>
+                <constraint firstItem="FRH-FC-16M" firstAttribute="top" secondItem="bq9-sB-fsC" secondAttribute="bottom" constant="25" id="hdK-N1-Oue"/>
+                <constraint firstItem="ULg-Ea-cNH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iYu-8P-3q3"/>
+                <constraint firstItem="ULg-Ea-cNH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sJH-ph-Fvd"/>
+                <constraint firstItem="bq9-sB-fsC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zie-Qc-5ik"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="headshot_large" width="1152" height="1728"/>
+    </resources>
+</document>

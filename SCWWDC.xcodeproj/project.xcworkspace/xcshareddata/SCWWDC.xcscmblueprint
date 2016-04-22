@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5EB1FC1535E2BD120B02C0D40BBC01C135FD45B2" : 0,
+    "456F4EE53F39EBD518BB488598D40049F5FC16E5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C276D141-E671-4BD3-A9A9-55FBAD00F6D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5EB1FC1535E2BD120B02C0D40BBC01C135FD45B2" : "snappr2\/",
+    "456F4EE53F39EBD518BB488598D40049F5FC16E5" : "..\/Fonts"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SCWWDC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SCWWDC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sebastianCain\/Fonts",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "456F4EE53F39EBD518BB488598D40049F5FC16E5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joshliu\/snappr2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EB1FC1535E2BD120B02C0D40BBC01C135FD45B2"
+    }
+  ]
+}

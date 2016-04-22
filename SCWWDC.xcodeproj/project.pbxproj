@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		383D4A541CC0713600D7FBD8 /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A531CC0713600D7FBD8 /* LabelExtensions.swift */; };
 		387850961CB8E23400E50BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850951CB8E23400E50BD8 /* AppDelegate.swift */; };
 		387850981CB8E23400E50BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850971CB8E23400E50BD8 /* ViewController.swift */; };
 		3878509B1CB8E23400E50BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387850991CB8E23400E50BD8 /* Main.storyboard */; };
 		3878509D1CB8E23400E50BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3878509C1CB8E23400E50BD8 /* Assets.xcassets */; };
 		387850A01CB8E23400E50BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3878509E1CB8E23400E50BD8 /* LaunchScreen.storyboard */; };
+		387850AE1CB8E4B400E50BD8 /* Panton-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 387850A81CB8E4B400E50BD8 /* Panton-ExtraLightItalic.otf */; };
+		387850AF1CB8E4B400E50BD8 /* Panton-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 387850A91CB8E4B400E50BD8 /* Panton-LightItalic.otf */; };
+		387850B01CB8E4B400E50BD8 /* Panton-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 387850AA1CB8E4B400E50BD8 /* Panton-ThinItalic.otf */; };
+		387850B11CB8E4B400E50BD8 /* Panton-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 387850AB1CB8E4B400E50BD8 /* Panton-ExtraLight.otf */; };
+		387850B21CB8E4B400E50BD8 /* Panton-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 387850AC1CB8E4B400E50BD8 /* Panton-Light.otf */; };
+		387850B31CB8E4B400E50BD8 /* Panton-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 387850AD1CB8E4B400E50BD8 /* Panton-Thin.otf */; };
+		387850BA1CB9535300E50BD8 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850B91CB9535300E50BD8 /* FontExtensions.swift */; };
+		387850C71CB9AECA00E50BD8 /* Panton-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 387850C61CB9AECA00E50BD8 /* Panton-SemiBold.otf */; };
+		387850CA1CB9CCFB00E50BD8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850C81CB9CCFB00E50BD8 /* AboutViewController.swift */; };
+		387850CB1CB9CCFB00E50BD8 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387850C91CB9CCFB00E50BD8 /* AboutViewController.xib */; };
+		387850CE1CB9CD5200E50BD8 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850CC1CB9CD5200E50BD8 /* TitleViewController.swift */; };
+		387850CF1CB9CD5200E50BD8 /* TitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387850CD1CB9CD5200E50BD8 /* TitleViewController.xib */; };
+		387850D21CB9DF6D00E50BD8 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 387850D11CB9DF6D00E50BD8 /* UIColor+Expanded.m */; };
+		387850D41CB9F94400E50BD8 /* ShapeLayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850D31CB9F94400E50BD8 /* ShapeLayerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		383D4A531CC0713600D7FBD8 /* LabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelExtensions.swift; sourceTree = "<group>"; };
 		387850921CB8E23400E50BD8 /* SCWWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCWWDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387850951CB8E23400E50BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		387850971CB8E23400E50BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +38,22 @@
 		3878509C1CB8E23400E50BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3878509F1CB8E23400E50BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		387850A11CB8E23400E50BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387850A81CB8E4B400E50BD8 /* Panton-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Panton-ExtraLightItalic.otf"; path = "../../../Fonts/Both/Panton/Panton-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		387850A91CB8E4B400E50BD8 /* Panton-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Panton-LightItalic.otf"; path = "../../../Fonts/Both/Panton/Panton-LightItalic.otf"; sourceTree = "<group>"; };
+		387850AA1CB8E4B400E50BD8 /* Panton-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Panton-ThinItalic.otf"; path = "../../../Fonts/Both/Panton/Panton-ThinItalic.otf"; sourceTree = "<group>"; };
+		387850AB1CB8E4B400E50BD8 /* Panton-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Panton-ExtraLight.otf"; path = "../../../Fonts/Both/Panton/Panton-ExtraLight.otf"; sourceTree = "<group>"; };
+		387850AC1CB8E4B400E50BD8 /* Panton-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Panton-Light.otf"; path = "../../../Fonts/Both/Panton/Panton-Light.otf"; sourceTree = "<group>"; };
+		387850AD1CB8E4B400E50BD8 /* Panton-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Panton-Thin.otf"; path = "../../../Fonts/Both/Panton/Panton-Thin.otf"; sourceTree = "<group>"; };
+		387850B91CB9535300E50BD8 /* FontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		387850C01CB979A500E50BD8 /* SCWWDC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCWWDC-Bridging-Header.h"; sourceTree = "<group>"; };
+		387850C61CB9AECA00E50BD8 /* Panton-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-SemiBold.otf"; sourceTree = "<group>"; };
+		387850C81CB9CCFB00E50BD8 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		387850C91CB9CCFB00E50BD8 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		387850CC1CB9CD5200E50BD8 /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		387850CD1CB9CD5200E50BD8 /* TitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleViewController.xib; sourceTree = "<group>"; };
+		387850D01CB9DF6D00E50BD8 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		387850D11CB9DF6D00E50BD8 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		387850D31CB9F94400E50BD8 /* ShapeLayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeLayerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +86,55 @@
 		387850941CB8E23400E50BD8 /* SCWWDC */ = {
 			isa = PBXGroup;
 			children = (
+				387850C01CB979A500E50BD8 /* SCWWDC-Bridging-Header.h */,
 				387850951CB8E23400E50BD8 /* AppDelegate.swift */,
 				387850971CB8E23400E50BD8 /* ViewController.swift */,
+				387850BD1CB9748100E50BD8 /* Component View Controllers */,
+				387850B41CB8E86C00E50BD8 /* Extensions */,
+				387850A71CB8E47500E50BD8 /* Resources */,
 				387850991CB8E23400E50BD8 /* Main.storyboard */,
 				3878509C1CB8E23400E50BD8 /* Assets.xcassets */,
 				3878509E1CB8E23400E50BD8 /* LaunchScreen.storyboard */,
 				387850A11CB8E23400E50BD8 /* Info.plist */,
 			);
 			path = SCWWDC;
+			sourceTree = "<group>";
+		};
+		387850A71CB8E47500E50BD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				387850C61CB9AECA00E50BD8 /* Panton-SemiBold.otf */,
+				387850A81CB8E4B400E50BD8 /* Panton-ExtraLightItalic.otf */,
+				387850A91CB8E4B400E50BD8 /* Panton-LightItalic.otf */,
+				387850AA1CB8E4B400E50BD8 /* Panton-ThinItalic.otf */,
+				387850AB1CB8E4B400E50BD8 /* Panton-ExtraLight.otf */,
+				387850AC1CB8E4B400E50BD8 /* Panton-Light.otf */,
+				387850AD1CB8E4B400E50BD8 /* Panton-Thin.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		387850B41CB8E86C00E50BD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				387850D01CB9DF6D00E50BD8 /* UIColor+Expanded.h */,
+				387850D11CB9DF6D00E50BD8 /* UIColor+Expanded.m */,
+				387850B91CB9535300E50BD8 /* FontExtensions.swift */,
+				387850D31CB9F94400E50BD8 /* ShapeLayerExtensions.swift */,
+				383D4A531CC0713600D7FBD8 /* LabelExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		387850BD1CB9748100E50BD8 /* Component View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				387850CC1CB9CD5200E50BD8 /* TitleViewController.swift */,
+				387850CD1CB9CD5200E50BD8 /* TitleViewController.xib */,
+				387850C81CB9CCFB00E50BD8 /* AboutViewController.swift */,
+				387850C91CB9CCFB00E50BD8 /* AboutViewController.xib */,
+			);
+			name = "Component View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +163,7 @@
 		3878508A1CB8E23400E50BD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Sebastian Cain";
@@ -122,8 +196,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387850B31CB8E4B400E50BD8 /* Panton-Thin.otf in Resources */,
+				387850B11CB8E4B400E50BD8 /* Panton-ExtraLight.otf in Resources */,
+				387850B01CB8E4B400E50BD8 /* Panton-ThinItalic.otf in Resources */,
 				387850A01CB8E23400E50BD8 /* LaunchScreen.storyboard in Resources */,
+				387850AE1CB8E4B400E50BD8 /* Panton-ExtraLightItalic.otf in Resources */,
+				387850CF1CB9CD5200E50BD8 /* TitleViewController.xib in Resources */,
+				387850B21CB8E4B400E50BD8 /* Panton-Light.otf in Resources */,
 				3878509D1CB8E23400E50BD8 /* Assets.xcassets in Resources */,
+				387850AF1CB8E4B400E50BD8 /* Panton-LightItalic.otf in Resources */,
+				387850C71CB9AECA00E50BD8 /* Panton-SemiBold.otf in Resources */,
+				387850CB1CB9CCFB00E50BD8 /* AboutViewController.xib in Resources */,
 				3878509B1CB8E23400E50BD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +220,12 @@
 			files = (
 				387850981CB8E23400E50BD8 /* ViewController.swift in Sources */,
 				387850961CB8E23400E50BD8 /* AppDelegate.swift in Sources */,
+				387850D21CB9DF6D00E50BD8 /* UIColor+Expanded.m in Sources */,
+				387850CE1CB9CD5200E50BD8 /* TitleViewController.swift in Sources */,
+				387850BA1CB9535300E50BD8 /* FontExtensions.swift in Sources */,
+				387850D41CB9F94400E50BD8 /* ShapeLayerExtensions.swift in Sources */,
+				387850CA1CB9CCFB00E50BD8 /* AboutViewController.swift in Sources */,
+				383D4A541CC0713600D7FBD8 /* LabelExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +340,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SCWWDC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sebastiancain.SCWWDC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SCWWDC/SCWWDC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,10 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SCWWDC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sebastiancain.SCWWDC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SCWWDC/SCWWDC-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +382,7 @@
 				387850A61CB8E23400E50BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
