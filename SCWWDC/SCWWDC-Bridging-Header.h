@@ -3,3 +3,6 @@
 //
 
 #import "UIColor+Expanded.h"
+#import "UILabel+DrawAnimation.h"
+#import "GameViewController.h"
+#import "PocketSVG.h"

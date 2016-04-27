@@ -38,7 +38,6 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Panton-SemiBold.otf</string>
 		<string>Panton-Thin.otf</string>
 		<string>Panton-Light.otf</string>
 		<string>Panton-ExtraLight.otf</string>

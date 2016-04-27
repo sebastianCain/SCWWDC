@@ -507,7 +507,7 @@ static NSMutableDictionary *_CrayolaNameCache = nil;
 
 - (NSString *)hexStringFromColor {
 	
-	return [NSString stringWithFormat:@"%0.6lX", self.rgbHex];
+	return [NSString stringWithFormat:@"%0.6X", (unsigned int)self.rgbHex];
 }
 
 - (NSString *)cssStringFromColor {
@@ -577,7 +577,7 @@ static NSMutableDictionary *_CrayolaNameCache = nil;
 
 - (NSString *)hexStringFromColorAndAlpha {
 	
-    return [NSString stringWithFormat:@"%0.8lX", self.rgbaHex];
+    return [NSString stringWithFormat:@"%0.8X", (unsigned int)self.rgbaHex];
 }
 
 + (UIColor *)colorWithString:(NSString *)stringToConvert {

@@ -8,12 +8,28 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class AboutViewController: ComponentViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet var abtme: UILabel!
+    
+    @IBOutlet var labels: [UILabel]!
+    
+    override func viewDidLayoutSubviews() {
+        
+        super.viewDidLayoutSubviews()
+        layers.append((abtme.convertToLayer(), 0.2, 0.8))
+        for i in labels {
+            layers.append((i.convertToLayer(), i.frame.origin.y/self.view.frame.height, 0.99))
+        }
+//        
+//        let myPath = PocketSVG.pathFromSVGFileNamed("Apple_logo_black").takeUnretainedValue()
+//        let applelayer = CAShapeLayer()
+//        applelayer.path = myPath
+//        self.view.layer.addSublayer(applelayer)
+//        layers.append((applelayer, 0.8, 0.99))
+//        
+        // Do any additional setup after loading the view.For the past 3 years, I've devoted my time to designing and developing iOS apps.
     }
 
     override func didReceiveMemoryWarning() {

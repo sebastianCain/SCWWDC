@@ -15,20 +15,18 @@ class TitleViewController: UIViewController {
     @IBOutlet var wwdc: UILabel!
     @IBOutlet var scroll: UIButton!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidLayoutSubviews() {
+        
+        super.viewDidLayoutSubviews()
 //        
 //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * Int64(NSEC_PER_SEC)), dispatch_get_main_queue(), { Void in
 //            self.name.drawOutlineAnimatedWithLineWidth(0.7, withDuration: 3, fadeToLabel: false)
 //        })
 //        
-        let n = CAShapeLayer()
-        n.frame = CGRect(x: 100, y: 100, width: 300, height: 100)
-        n.backgroundColor = UIColor.redColor().CGColor
-        n.addTextPath("hi", font: UIFont(name: "Panton-Thin", size: 48)!)
-        self.view.layer.addSublayer(n)
-        n.animateStroke(3, delay: 2)
+        
+        
+        name.convertToLayer().animateStroke(3, delay: 1)
+        wwdc.convertToLayer().animateStroke(3, delay: 2)
         
         let circlePath = UIBezierPath(ovalInRect: scroll.bounds)
         circlePath.applyTransform(CGAffineTransformRotate(CGAffineTransformIdentity, CGFloat(-M_PI/2)))
@@ -52,7 +50,7 @@ class TitleViewController: UIViewController {
         shape.frame = scroll.bounds
         shape.path = path.CGPath
         scroll.layer.addSublayer(shape)
-        shape.animateStroke(2, delay: 5)
+        shape.animateStroke(2, delay: 4)
     }
 
     override func didReceiveMemoryWarning() {
