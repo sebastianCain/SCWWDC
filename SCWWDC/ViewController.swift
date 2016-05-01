@@ -85,7 +85,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
         }
         self.view.addSubview(vcview)
         
-        let sv = UIScrollView(frame: self.view.frame)
+        sv = UIScrollView(frame: self.view.frame)
         sv.contentSize = CGSize(width: sw*6, height: sh)
         sv.pagingEnabled = true
         sv.delegate = self
@@ -107,6 +107,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         co = scrollView.contentOffset.x;
+        
+//        print("content offset \(co)")
         
         animatePage(Int(co/sw), offset: co%sw)
         
@@ -152,9 +154,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
     func scrollTapped() {
         sv.setContentOffset(CGPoint(x: 0, y: sh), animated: true)
     }
-    func currentPage(co: CGFloat) -> Int {
-        print(sv.contentOffset.x)
-        print(co)
+    func currentPage() -> Int {
+        print("Content Offset - \(sv.contentOffset.x)")
         return Int(co/sw)
     }
     // MARK: 3D touch
@@ -178,7 +179,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
     
     // MARK: UIViewControllerPreviewingDelegate methods
     func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
-        //if currentPage() == 0 || currentPage() == 5 { return nil }
+        if currentPage() == 0 || currentPage() == 5 { return nil }
         
         var selectedlayer = CAShapeLayer()
         var hit = false
@@ -197,7 +198,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
         
         detailVC.preferredContentSize = CGSize(width: 0.0, height: 190)
         detailVC.index = selectedlayer.valueForKey("index") as! Int
-        detailVC.section = Int(co/sw)+1
+        detailVC.section = currentPage() - 1
         previewingContext.sourceRect = selectedlayer.frame
         
         return detailVC
