@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPreviewingDelegate {
     
     var sh = CGFloat()
     var sw = CGFloat()
@@ -16,13 +16,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     var sv = UIScrollView()
     
     var tvc = TitleViewController()
-    var avc = AboutViewController()
-    var hvc = HackathonsViewController()
-    var svc = SkillsViewController()
-    var evc = ExperienceViewController()
     var fvc = FinalViewController()
     
+    var vcview = UIView()
     var vcs = [ComponentViewController]()
+    
+    var hex = [CAShapeLayer]()
     
     var gvc = GameViewController()
     
@@ -34,6 +33,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     var bvs = [UIColor]()
     
+    var co = CGFloat()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,7 +42,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         sh = self.view.frame.height
         sw = self.view.frame.width
         
-        self.view.backgroundColor = UIColor(hexString: "27ae60")
+        self.navigationController?.navigationBarHidden = true
+        self.view.backgroundColor = UIColor(hexString: "16a085")
         
         let gv = gvc.view
         gv.frame = self.view.frame
@@ -51,60 +53,71 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         overlay.backgroundColor = UIColor(white: 0.0, alpha: 0.3)
         self.view.addSubview(overlay)
         
-        bv1 = UIColor(hexString: "27ae60")
         bv2 = UIColor(hexString: "16a085")
         bv3 = UIColor(hexString: "2980b9")
         bv4 = UIColor(hexString: "8e44ad")
         bv5 = UIColor(hexString: "c0392b")
         
-        bvs = [bv1, bv2, bv3, bv4, bv5]
+        bvs = [bv2, bv3, bv4, bv5]
         
-        vcs = [avc, hvc, svc, evc, fvc]
+        let hexps = HexManager.hexPoints(96, sw: sw, sh: sh)
+        let hexview = UIView(frame: self.view.frame)
+        for i in 0..<6 {
+            let h = HexManager.hexLayer(hexps[i])
+            h.setValue(i, forKey: "index")
+            hex.append(h)
+            hexview.layer.addSublayer(h)
+        }
+        self.view.addSubview(hexview)
+        
+        vcview.frame = self.view.frame
+        vcview.userInteractionEnabled = false
+        for i in 0..<4 {
+            let newvc = ComponentViewController()
+            newvc.setup(i)
+            for j in newvc.layers { j.strokeStart = 1; j.strokeEnd = 1 }
+            newvc.view.userInteractionEnabled = false
+            vcs.append(newvc)
+            
+            let v = newvc.view
+            v.frame = CGRect(x: 0, y: 0, width: sw, height: sh)
+            vcview.addSubview(v)
+        }
+        self.view.addSubview(vcview)
         
         let sv = UIScrollView(frame: self.view.frame)
-        sv.contentSize = CGSize(width: sw, height: sh*6)
+        sv.contentSize = CGSize(width: sw*6, height: sh)
         sv.pagingEnabled = true
         sv.delegate = self
+        sv.decelerationRate = 1000.0
+        sv.bounces = false
         self.view.addSubview(sv)
         
         let tv = tvc.view
         tv.frame = CGRect(x: 0, y: 0, width: sw, height: sh)
         sv.addSubview(tv)
+        let fv = fvc.view
+        fv.frame = CGRect(x: sw*5, y: 0, width: sw, height: sh)
+        sv.addSubview(fv)
         
-        for i in 0..<vcs.count {
-            let v = vcs[i].view
-            v.frame = CGRect(x: 0, y: sh*CGFloat(i+1), width: sw, height: sh*CGFloat(i+1))
-            sv.addSubview(v)
+        if(traitCollection.forceTouchCapability == .Available) {
+            registerForPreviewingWithDelegate(self, sourceView: view)
         }
-        
     }
     
-    // MARK: lmao
-
-//    func scrollViewDidScroll(scrollView: UIScrollView) {
-//        let co = scrollView.contentOffset.y;
-//        if co <= sh {
-//            tvc.face.alpha = (sh-co)/sh
-//            bvs[0].alpha = (co)/sh
-//        }
-//        for i in 0...3 {
-//            if co <= sh*CGFloat(i+2) {
-//                bvs[i].alpha = (CGFloat(i+2)*sh-co)/sh
-//                bvs[i+1].alpha = (co-(sh*CGFloat(i+1)))/sh
-//                break
-//            }
-//        }
-//    }
-    
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        let co = scrollView.contentOffset.y;
+        co = scrollView.contentOffset.x;
         
-        animatePage(Int(co/sh), offset: co%sh)
+        animatePage(Int(co/sw), offset: co%sw)
         
         for i in 0...3 {
-            if co < sh {
-                self.view.backgroundColor = UIColor(hexString: "27ae60")
-            } else if co < sh*CGFloat(i+2) {
+            if co < sw {
+                self.view.backgroundColor = UIColor(hexString: "16a085")
+                break
+            } else if co >= sw*4 {
+                self.view.backgroundColor = UIColor(hexString: "c0392b")
+                break
+            } else if co < sw*CGFloat(i+2) {
                 self.view.backgroundColor = UIColor(red: iv(bvs[i].red, c2: bvs[i+1].red, offset: co), green: iv(bvs[i].green, c2: bvs[i+1].green, offset: co), blue: iv(bvs[i].blue, c2: bvs[i+1].blue, offset: co), alpha: CGFloat(1))
                 break
             }
@@ -112,30 +125,88 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func iv(c1: CGFloat, c2: CGFloat, offset: CGFloat) -> CGFloat {
-        return c1+((c2-c1)*((offset%sh)/sh))
+        return c1+((c2-c1)*((offset%sw)/sw))
     }
     
     func animatePage(page: Int, offset: CGFloat) {
-        //print("p: \(page) o: \(offset) ")
         if page == 5 { return }
-        for i in vcs[page].layers {
-            //print(((offset%sh)/sh-i.s)/(i.e-i.s))
-            let diff = (offset%sh)/sh
-            if diff < i.s { i.layer.strokeEnd = 0.0 }
-            else if diff >= i.s && diff < i.e { i.layer.strokeEnd = (diff-i.s)/(i.e-i.s) }
-            else if diff > i.e { i.layer.strokeEnd = 1.0 }
+        if page != 0 {
+            for i in vcs[page-1].layers {
+                if offset == 0.0 { i.strokeStart = 0.0 }
+                let diff = (offset%sw)/sw
+                if diff < 0.4 { i.strokeEnd = (0.4-diff)/0.4 }
+                else { i.strokeEnd = 0.0 }
+            }
         }
+        if page != 4 {
+            for i in vcs[page].layers {
+                let diff = (offset%sw)/sw
+                if diff > 0.6 { i.strokeStart = (1.0-diff)/0.4 }
+                else { i.strokeStart = 1.0 }
+                
+            }
+        }
+        
     }
     
     func scrollTapped() {
         sv.setContentOffset(CGPoint(x: 0, y: sh), animated: true)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func currentPage(co: CGFloat) -> Int {
+        print(sv.contentOffset.x)
+        print(co)
+        return Int(co/sw)
     }
-
-
+    // MARK: 3D touch
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if( segue.identifier == "detail" ){
+            
+            let vc = segue.destinationViewController as! DetailViewController
+            vc.section = 0
+            vc.index = 0
+            
+        }
+        
+    }
+    
+    // MARK: Trait collection delegate methods
+    override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+        
+    }
+    
+    // MARK: UIViewControllerPreviewingDelegate methods
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        //if currentPage() == 0 || currentPage() == 5 { return nil }
+        
+        var selectedlayer = CAShapeLayer()
+        var hit = false
+        for i in hex {
+            if (i.hitTest(location) != nil) {
+                selectedlayer = i
+                hit = true
+                break
+            }
+        }
+        if hit == false { return nil }
+        
+        print(selectedlayer.debugDescription)
+        
+        guard let detailVC = storyboard?.instantiateViewControllerWithIdentifier("dvc") as? DetailViewController else { return nil }
+        
+        detailVC.preferredContentSize = CGSize(width: 0.0, height: 190)
+        detailVC.index = selectedlayer.valueForKey("index") as! Int
+        detailVC.section = Int(co/sw)+1
+        previewingContext.sourceRect = selectedlayer.frame
+        
+        return detailVC
+    }
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        
+        showViewController(viewControllerToCommit, sender: self)
+        
+    }
 }
 

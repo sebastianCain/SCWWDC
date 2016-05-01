@@ -10,26 +10,24 @@ import UIKit
 
 class ExperienceViewController: ComponentViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    @IBOutlet var labels: [UILabel]!
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        for i in labels {
+            layers.append(i.convertToLayer())
+        }
+        
+        hexStrings = 
+        let lbls = HexManager.hexLabels(hexpts, hexStrings: hexStrings)
+        
+        for l in lbls {
+            self.view.addSubview(l)
+            layers.append(l.convertToLayer())
+        }
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

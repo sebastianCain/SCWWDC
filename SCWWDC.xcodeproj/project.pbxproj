@@ -12,31 +12,26 @@
 		383D4A601CCEC8FC00D7FBD8 /* Panton-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A5D1CCEC8FC00D7FBD8 /* Panton-ExtraLight.otf */; };
 		383D4A611CCEC8FC00D7FBD8 /* Panton-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A5E1CCEC8FC00D7FBD8 /* Panton-Light.otf */; };
 		383D4A621CCEC8FC00D7FBD8 /* Panton-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A5F1CCEC8FC00D7FBD8 /* Panton-Thin.otf */; };
-		383D4A651CCECC9500D7FBD8 /* HackathonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A631CCECC9500D7FBD8 /* HackathonsViewController.swift */; };
-		383D4A661CCECC9500D7FBD8 /* HackathonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A641CCECC9500D7FBD8 /* HackathonsViewController.xib */; };
-		383D4A691CCECCAA00D7FBD8 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A671CCECCAA00D7FBD8 /* SkillsViewController.swift */; };
-		383D4A6A1CCECCAA00D7FBD8 /* SkillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A681CCECCAA00D7FBD8 /* SkillsViewController.xib */; };
-		383D4A6F1CCECCD300D7FBD8 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A6D1CCECCD300D7FBD8 /* FinalViewController.swift */; };
-		383D4A701CCECCD300D7FBD8 /* FinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A6E1CCECCD300D7FBD8 /* FinalViewController.xib */; };
 		383D4A721CCF00A900D7FBD8 /* ComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A711CCF00A900D7FBD8 /* ComponentViewController.swift */; };
-		383D4A751CCF026600D7FBD8 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A731CCF026600D7FBD8 /* ExperienceViewController.swift */; };
-		383D4A761CCF026600D7FBD8 /* ExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A741CCF026600D7FBD8 /* ExperienceViewController.xib */; };
 		383D4A7B1CD02B6B00D7FBD8 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A781CD02B6B00D7FBD8 /* art.scnassets */; };
 		383D4A7C1CD02B6B00D7FBD8 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A7A1CD02B6B00D7FBD8 /* GameViewController.m */; };
 		383D4A7F1CD0627F00D7FBD8 /* PocketSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A7D1CD0627F00D7FBD8 /* PocketSVG.m */; };
-		383D4A821CD066DF00D7FBD8 /* Apple_logo_black.svg in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A811CD066DF00D7FBD8 /* Apple_logo_black.svg */; };
 		387850961CB8E23400E50BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850951CB8E23400E50BD8 /* AppDelegate.swift */; };
 		387850981CB8E23400E50BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850971CB8E23400E50BD8 /* ViewController.swift */; };
 		3878509B1CB8E23400E50BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387850991CB8E23400E50BD8 /* Main.storyboard */; };
 		3878509D1CB8E23400E50BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3878509C1CB8E23400E50BD8 /* Assets.xcassets */; };
 		387850A01CB8E23400E50BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3878509E1CB8E23400E50BD8 /* LaunchScreen.storyboard */; };
 		387850BA1CB9535300E50BD8 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850B91CB9535300E50BD8 /* FontExtensions.swift */; };
-		387850CA1CB9CCFB00E50BD8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850C81CB9CCFB00E50BD8 /* AboutViewController.swift */; };
-		387850CB1CB9CCFB00E50BD8 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387850C91CB9CCFB00E50BD8 /* AboutViewController.xib */; };
 		387850CE1CB9CD5200E50BD8 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850CC1CB9CD5200E50BD8 /* TitleViewController.swift */; };
 		387850CF1CB9CD5200E50BD8 /* TitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387850CD1CB9CD5200E50BD8 /* TitleViewController.xib */; };
 		387850D21CB9DF6D00E50BD8 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 387850D11CB9DF6D00E50BD8 /* UIColor+Expanded.m */; };
 		387850D41CB9F94400E50BD8 /* ShapeLayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850D31CB9F94400E50BD8 /* ShapeLayerExtensions.swift */; };
+		38B7A32C1CD1EF8600C130C1 /* HexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7A32B1CD1EF8600C130C1 /* HexManager.swift */; };
+		38B7A3301CD303BA00C130C1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7A32F1CD303BA00C130C1 /* Data.swift */; };
+		38B7A3321CD322C500C130C1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7A3311CD322C500C130C1 /* DetailViewController.swift */; };
+		38B7A3371CD47D2A00C130C1 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7A3351CD47D2A00C130C1 /* FinalViewController.swift */; };
+		38B7A3381CD47D2A00C130C1 /* FinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B7A3361CD47D2A00C130C1 /* FinalViewController.xib */; };
+		38F108D61CD1797500648170 /* PathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F108D51CD1797500648170 /* PathExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,21 +41,12 @@
 		383D4A5D1CCEC8FC00D7FBD8 /* Panton-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-ExtraLight.otf"; sourceTree = "<group>"; };
 		383D4A5E1CCEC8FC00D7FBD8 /* Panton-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-Light.otf"; sourceTree = "<group>"; };
 		383D4A5F1CCEC8FC00D7FBD8 /* Panton-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-Thin.otf"; sourceTree = "<group>"; };
-		383D4A631CCECC9500D7FBD8 /* HackathonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackathonsViewController.swift; sourceTree = "<group>"; };
-		383D4A641CCECC9500D7FBD8 /* HackathonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HackathonsViewController.xib; sourceTree = "<group>"; };
-		383D4A671CCECCAA00D7FBD8 /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
-		383D4A681CCECCAA00D7FBD8 /* SkillsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsViewController.xib; sourceTree = "<group>"; };
-		383D4A6D1CCECCD300D7FBD8 /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
-		383D4A6E1CCECCD300D7FBD8 /* FinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalViewController.xib; sourceTree = "<group>"; };
 		383D4A711CCF00A900D7FBD8 /* ComponentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentViewController.swift; sourceTree = "<group>"; };
-		383D4A731CCF026600D7FBD8 /* ExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
-		383D4A741CCF026600D7FBD8 /* ExperienceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceViewController.xib; sourceTree = "<group>"; };
 		383D4A781CD02B6B00D7FBD8 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		383D4A791CD02B6B00D7FBD8 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		383D4A7A1CD02B6B00D7FBD8 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		383D4A7D1CD0627F00D7FBD8 /* PocketSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketSVG.m; sourceTree = "<group>"; };
 		383D4A7E1CD0627F00D7FBD8 /* PocketSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
-		383D4A811CD066DF00D7FBD8 /* Apple_logo_black.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Apple_logo_black.svg; sourceTree = "<group>"; };
 		387850921CB8E23400E50BD8 /* SCWWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCWWDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387850951CB8E23400E50BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		387850971CB8E23400E50BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,13 +56,17 @@
 		387850A11CB8E23400E50BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		387850B91CB9535300E50BD8 /* FontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		387850C01CB979A500E50BD8 /* SCWWDC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCWWDC-Bridging-Header.h"; sourceTree = "<group>"; };
-		387850C81CB9CCFB00E50BD8 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		387850C91CB9CCFB00E50BD8 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		387850CC1CB9CD5200E50BD8 /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		387850CD1CB9CD5200E50BD8 /* TitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleViewController.xib; sourceTree = "<group>"; };
 		387850D01CB9DF6D00E50BD8 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
 		387850D11CB9DF6D00E50BD8 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
 		387850D31CB9F94400E50BD8 /* ShapeLayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeLayerExtensions.swift; sourceTree = "<group>"; };
+		38B7A32B1CD1EF8600C130C1 /* HexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexManager.swift; sourceTree = "<group>"; };
+		38B7A32F1CD303BA00C130C1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		38B7A3311CD322C500C130C1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		38B7A3351CD47D2A00C130C1 /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		38B7A3361CD47D2A00C130C1 /* FinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalViewController.xib; sourceTree = "<group>"; };
+		38F108D51CD1797500648170 /* PathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +93,6 @@
 		383D4A801CD0669400D7FBD8 /* SVG */ = {
 			isa = PBXGroup;
 			children = (
-				383D4A811CD066DF00D7FBD8 /* Apple_logo_black.svg */,
 				383D4A7E1CD0627F00D7FBD8 /* PocketSVG.h */,
 				383D4A7D1CD0627F00D7FBD8 /* PocketSVG.m */,
 			);
@@ -134,7 +123,7 @@
 				387850951CB8E23400E50BD8 /* AppDelegate.swift */,
 				387850971CB8E23400E50BD8 /* ViewController.swift */,
 				383D4A771CD02B4800D7FBD8 /* SceneKit */,
-				387850BD1CB9748100E50BD8 /* Component View Controllers */,
+				387850BD1CB9748100E50BD8 /* Components */,
 				387850B41CB8E86C00E50BD8 /* Extensions */,
 				387850A71CB8E47500E50BD8 /* Resources */,
 				387850991CB8E23400E50BD8 /* Main.storyboard */,
@@ -165,28 +154,24 @@
 				387850B91CB9535300E50BD8 /* FontExtensions.swift */,
 				387850D31CB9F94400E50BD8 /* ShapeLayerExtensions.swift */,
 				383D4A531CC0713600D7FBD8 /* LabelExtensions.swift */,
+				38F108D51CD1797500648170 /* PathExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		387850BD1CB9748100E50BD8 /* Component View Controllers */ = {
+		387850BD1CB9748100E50BD8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				383D4A711CCF00A900D7FBD8 /* ComponentViewController.swift */,
+				38B7A3311CD322C500C130C1 /* DetailViewController.swift */,
 				387850CC1CB9CD5200E50BD8 /* TitleViewController.swift */,
 				387850CD1CB9CD5200E50BD8 /* TitleViewController.xib */,
-				387850C81CB9CCFB00E50BD8 /* AboutViewController.swift */,
-				387850C91CB9CCFB00E50BD8 /* AboutViewController.xib */,
-				383D4A631CCECC9500D7FBD8 /* HackathonsViewController.swift */,
-				383D4A641CCECC9500D7FBD8 /* HackathonsViewController.xib */,
-				383D4A671CCECCAA00D7FBD8 /* SkillsViewController.swift */,
-				383D4A681CCECCAA00D7FBD8 /* SkillsViewController.xib */,
-				383D4A731CCF026600D7FBD8 /* ExperienceViewController.swift */,
-				383D4A741CCF026600D7FBD8 /* ExperienceViewController.xib */,
-				383D4A6D1CCECCD300D7FBD8 /* FinalViewController.swift */,
-				383D4A6E1CCECCD300D7FBD8 /* FinalViewController.xib */,
+				38B7A3351CD47D2A00C130C1 /* FinalViewController.swift */,
+				38B7A3361CD47D2A00C130C1 /* FinalViewController.xib */,
+				38B7A32B1CD1EF8600C130C1 /* HexManager.swift */,
+				38B7A32F1CD303BA00C130C1 /* Data.swift */,
 			);
-			name = "Component View Controllers";
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,13 +238,8 @@
 				383D4A7B1CD02B6B00D7FBD8 /* art.scnassets in Resources */,
 				3878509D1CB8E23400E50BD8 /* Assets.xcassets in Resources */,
 				383D4A601CCEC8FC00D7FBD8 /* Panton-ExtraLight.otf in Resources */,
-				383D4A761CCF026600D7FBD8 /* ExperienceViewController.xib in Resources */,
-				383D4A821CD066DF00D7FBD8 /* Apple_logo_black.svg in Resources */,
-				383D4A6A1CCECCAA00D7FBD8 /* SkillsViewController.xib in Resources */,
-				387850CB1CB9CCFB00E50BD8 /* AboutViewController.xib in Resources */,
-				383D4A701CCECCD300D7FBD8 /* FinalViewController.xib in Resources */,
+				38B7A3381CD47D2A00C130C1 /* FinalViewController.xib in Resources */,
 				383D4A611CCEC8FC00D7FBD8 /* Panton-Light.otf in Resources */,
-				383D4A661CCECC9500D7FBD8 /* HackathonsViewController.xib in Resources */,
 				383D4A621CCEC8FC00D7FBD8 /* Panton-Thin.otf in Resources */,
 				3878509B1CB8E23400E50BD8 /* Main.storyboard in Resources */,
 			);
@@ -272,22 +252,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				383D4A751CCF026600D7FBD8 /* ExperienceViewController.swift in Sources */,
-				383D4A691CCECCAA00D7FBD8 /* SkillsViewController.swift in Sources */,
 				387850981CB8E23400E50BD8 /* ViewController.swift in Sources */,
-				383D4A6F1CCECCD300D7FBD8 /* FinalViewController.swift in Sources */,
 				387850961CB8E23400E50BD8 /* AppDelegate.swift in Sources */,
-				383D4A651CCECC9500D7FBD8 /* HackathonsViewController.swift in Sources */,
 				387850D21CB9DF6D00E50BD8 /* UIColor+Expanded.m in Sources */,
 				387850CE1CB9CD5200E50BD8 /* TitleViewController.swift in Sources */,
 				387850BA1CB9535300E50BD8 /* FontExtensions.swift in Sources */,
 				387850D41CB9F94400E50BD8 /* ShapeLayerExtensions.swift in Sources */,
+				38B7A3321CD322C500C130C1 /* DetailViewController.swift in Sources */,
 				383D4A7C1CD02B6B00D7FBD8 /* GameViewController.m in Sources */,
 				383D4A721CCF00A900D7FBD8 /* ComponentViewController.swift in Sources */,
+				38F108D61CD1797500648170 /* PathExtensions.swift in Sources */,
 				383D4A7F1CD0627F00D7FBD8 /* PocketSVG.m in Sources */,
-				387850CA1CB9CCFB00E50BD8 /* AboutViewController.swift in Sources */,
+				38B7A3301CD303BA00C130C1 /* Data.swift in Sources */,
 				383D4A5A1CCEB2A400D7FBD8 /* UILabel+DrawAnimation.m in Sources */,
+				38B7A3371CD47D2A00C130C1 /* FinalViewController.swift in Sources */,
 				383D4A541CC0713600D7FBD8 /* LabelExtensions.swift in Sources */,
+				38B7A32C1CD1EF8600C130C1 /* HexManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

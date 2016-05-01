@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Panton-Light.otf">
+            <string>Panton-Light</string>
+        </mutableArray>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinalViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinalViewController" customModule="SCWWDC" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="745"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwdc16-og" translatesAutoresizingMaskIntoConstraints="NO" id="ezN-Lf-sVM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ezN-Lf-sVM" secondAttribute="height" multiplier="1:1" id="Fww-XF-YUd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcf-fm-0rj">
+                    <rect key="frame" x="40" y="600" width="520" height="105"/>
+                    <string key="text">Big thanks for checking out my app! While I know this year we were supposed to submit apps we were working on, I decided none of my existing ones used cool enough current Apple tech to submit. I threw together this little demo in a week to show off some of my current work in animation and design,  and the capabilities of 3D touch, CoreText, and SceneKit! Hope you enjoyed it.</string>
+                    <fontDescription key="fontDescription" name="Panton-Light" family="Panton" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.15294117647058825" green="0.16470588235294117" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Kcf-fm-0rj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="0Rd-hg-UtK"/>
+                <constraint firstItem="ezN-Lf-sVM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="62a-0b-XBs"/>
+                <constraint firstItem="ezN-Lf-sVM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MrG-PT-ono"/>
+                <constraint firstAttribute="trailing" secondItem="Kcf-fm-0rj" secondAttribute="trailing" constant="40" id="OgD-4T-Mn6"/>
+                <constraint firstItem="ezN-Lf-sVM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RBH-RJ-PLz"/>
+                <constraint firstItem="Kcf-fm-0rj" firstAttribute="top" secondItem="ezN-Lf-sVM" secondAttribute="bottom" id="l84-me-QKX"/>
+                <constraint firstAttribute="bottom" secondItem="Kcf-fm-0rj" secondAttribute="bottom" constant="40" id="rPb-ie-S3u"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="281" y="524.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="wwdc16-og" width="1200" height="1200"/>
+    </resources>
 </document>

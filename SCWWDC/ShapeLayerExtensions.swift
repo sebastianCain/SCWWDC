@@ -26,7 +26,7 @@ extension CAShapeLayer {
 //            }
 //            self.path = cgpath
 //        }
-//    }
+    //    }
     
     func animateStroke(duration: Double, delay: Double) {
         self.strokeColor = UIColor.whiteColor().CGColor
@@ -51,4 +51,5 @@ extension CAShapeLayer {
         })
         CATransaction.commit()
     }
+    
 }

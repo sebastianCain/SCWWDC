@@ -71,8 +71,8 @@
     [gestureRecognizers addObjectsFromArray:scnView.gestureRecognizers];
     scnView.gestureRecognizers = gestureRecognizers;
 	
-	[self tripCircAni];
-	[self atomsAni];
+	//[self tripCircAni];
+	//[self atomsAni];
 }
 
 -(void)tripCircAni {

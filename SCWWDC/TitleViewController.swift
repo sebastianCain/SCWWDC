@@ -24,18 +24,15 @@ class TitleViewController: UIViewController {
 //        })
 //        
         
-        
         name.convertToLayer().animateStroke(3, delay: 1)
         wwdc.convertToLayer().animateStroke(3, delay: 2)
         
         let circlePath = UIBezierPath(ovalInRect: scroll.bounds)
-        circlePath.applyTransform(CGAffineTransformRotate(CGAffineTransformIdentity, CGFloat(-M_PI/2)))
-        circlePath.applyTransform(CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 50))
         let circleShape = CAShapeLayer()
         circleShape.frame = scroll.bounds
         circleShape.path = circlePath.CGPath
         scroll.layer.addSublayer(circleShape)
-        circleShape.animateStroke(2, delay: 4)
+        circleShape.animateStroke(3, delay: 3)
         
         let path = UIBezierPath()
         path.moveToPoint(CGPoint(x: 25,y: 12))
@@ -45,6 +42,8 @@ class TitleViewController: UIViewController {
         path.addLineToPoint(CGPoint(x: 35, y: 27))
         path.addLineToPoint(CGPoint(x: 25, y: 37))
         path.closePath()
+        path.applyTransform(CGAffineTransformRotate(CGAffineTransformIdentity, CGFloat(-M_PI/2)))
+        path.applyTransform(CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 50))
         
         let shape = CAShapeLayer()
         shape.frame = scroll.bounds
