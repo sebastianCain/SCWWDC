@@ -43,5 +43,13 @@ class Data: NSObject {
             ["Reppin", "April 2016", "Reppin is an iOS app I worked on in a large team. We used OpenCV and a good amount of design expertise to create an awesome looking fitness app that counted your reps of any given exercise by mapping the position of your shirt. It won 3rd overall at HackBCA III."],
             ["Cuddle", "Jan 2016", "Cuddle is an iOS app I worked on with 3 college seniors. We used existing imaging technologies to find the heartrate of any given person simply by recording their skin. We created an interface and new use for it as a baby monitor, and won a spot in the Top 10 at PennApps XIII."]
         ],
+        [
+            ["Keep", "Summer 2015", "I was a paid iOS Developer Intern at a startup called Keep for the summer of 2015. I worked on animations and custom user interface controls for Refill, a side project whose goal was to provide a service to refill anything you need with two taps and one-day delivery. Check out Keep at http://keep.com."],
+            ["Isometric", "Nov 2014 - Present", "Viewzik is a music visualizer/editor iOS app I made with two friends. It uses the Superpowered Audio DSL SDK and CoreAnimation to both visualize music in a new way and be able to apply effects in realtime. It won Best App at CodeDay Feb 2015."],
+            ["MagicPen", "Feb 2015", "MagicPen is an iOS app I worked on a team to create. We used the magnometer on the iPhone to get magnitude values, then mapped polar coordinates to cartesian ones in order to allow someone writing on a desk with a custom 3D printed magnet pen we created to see their words etched on the screen."],
+            ["Deflector", "Nov 2014", "Deflector is a simple game I made with my friend Josh Liu with Swift and SpriteKit. We published it the next January, and received 1000+ downloads the first week, in addition to being featured #24 in Top New Games, according to App Annie."],
+            ["Reppin", "April 2016", "Reppin is an iOS app I worked on in a large team. We used OpenCV and a good amount of design expertise to create an awesome looking fitness app that counted your reps of any given exercise by mapping the position of your shirt. It won 3rd overall at HackBCA III."],
+            ["Cuddle", "Jan 2016", "Cuddle is an iOS app I worked on with 3 college seniors. We used existing imaging technologies to find the heartrate of any given person simply by recording their skin. We created an interface and new use for it as a baby monitor, and won a spot in the Top 10 at PennApps XIII."]
+        ],
     ]
 }

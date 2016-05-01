@@ -152,10 +152,10 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
     func scrollTapped() {
         sv.setContentOffset(CGPoint(x: 0, y: sh), animated: true)
     }
-    func currentPage(co: CGFloat) -> Int {
+    
+    func currentPage() -> Int {
         print(sv.contentOffset.x)
-        print(co)
-        return Int(co/sw)
+        return Int(sv.contentOffset.x/sw)
     }
     // MARK: 3D touch
     
@@ -197,7 +197,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
         
         detailVC.preferredContentSize = CGSize(width: 0.0, height: 190)
         detailVC.index = selectedlayer.valueForKey("index") as! Int
-        detailVC.section = Int(co/sw)+1
+        detailVC.section = currentPage()
         previewingContext.sourceRect = selectedlayer.frame
         
         return detailVC
