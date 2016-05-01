@@ -41,18 +41,29 @@ class DetailViewController: UIViewController {
         l1.textColor = UIColor.blackColor()
         self.view.addSubview(l1)
         
-        let l2 = UILabel(frame: CGRect(x: 40, y: 370, width: sw-80, height: 200))
-        l2.textAlignment = .Center
-        l2.font = UIFont.scwwdcLightFont(14)
-        l2.text = content[2]
-        l2.textColor = UIColor.blackColor()
-        l2.numberOfLines = 0
-        self.view.addSubview(l2)
+        if (section != 3) {
+            let l2 = UILabel(frame: CGRect(x: 40, y: 370, width: sw-80, height: 200))
+            l2.textAlignment = .Center
+            l2.font = UIFont.scwwdcLightFont(14)
+            l2.text = content[2]
+            l2.textColor = UIColor.blackColor()
+            l2.numberOfLines = 0
+            self.view.addSubview(l2)
+            
+            let imgview = UIImageView(frame: CGRect(x: sw/2-150, y: 200, width: 300, height: 200))
+            imgview.contentMode = .ScaleAspectFit
+            imgview.image = UIImage(named: content[0])
+            self.view.addSubview(imgview)
+        } else {
+            let l2 = UILabel(frame: CGRect(x: 40, y: 250, width: sw-80, height: 200))
+            l2.textAlignment = .Center
+            l2.font = UIFont.scwwdcLightFont(16)
+            l2.text = content[2]
+            l2.textColor = UIColor.blackColor()
+            l2.numberOfLines = 0
+            self.view.addSubview(l2)
+        }
         
-        let imgview = UIImageView(frame: CGRect(x: sw/2-100, y: 200, width: 200, height: 200))
-        imgview.contentMode = .ScaleAspectFit
-        imgview.image = UIImage(named: content[0])
-        self.view.addSubview(imgview)
         
         let scroll = UIButton(frame: CGRect(x: sw/2-25, y: sh-100, width: 50, height: 50))
         scroll.addTarget(self, action: #selector(self.back), forControlEvents: .TouchUpInside)

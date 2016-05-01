@@ -61,6 +61,16 @@ class ComponentViewController: UIViewController {
         self.view.addSubview(l2)
         layers.append(l2.convertToLayer())
         
+        if index == 0 {
+            let l3 = UILabel(frame: CGRect(x: 0, y: sh-100, width: sw, height: 30))
+            l3.textAlignment = .Center
+            l3.font = UIFont.scwwdcExtraLightFont(14)
+            l3.text = "(hint - Force Touch to Peek and Pop each hexagon)"
+            l3.textColor = UIColor.whiteColor()
+            self.view.addSubview(l3)
+            layers.append(l3.convertToLayer())
+        }
+        
         hexStrings = Data.hexStrings[index]
         
         let lbls = HexManager.hexLabels(hexpts, hexStrings: hexStrings)

@@ -85,11 +85,11 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
         }
         self.view.addSubview(vcview)
         
-        let sv = UIScrollView(frame: self.view.frame)
+        sv = UIScrollView(frame: self.view.frame)
         sv.contentSize = CGSize(width: sw*6, height: sh)
         sv.pagingEnabled = true
         sv.delegate = self
-        sv.decelerationRate = 1000.0
+        sv.decelerationRate = UIScrollViewDecelerationRateFast
         sv.bounces = false
         self.view.addSubview(sv)
         
@@ -107,6 +107,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         co = scrollView.contentOffset.x;
+        
+//        print("content offset \(co)")
         
         animatePage(Int(co/sw), offset: co%sw)
         
@@ -152,10 +154,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
     func scrollTapped() {
         sv.setContentOffset(CGPoint(x: 0, y: sh), animated: true)
     }
-    
+
     func currentPage() -> Int {
-        print(sv.contentOffset.x)
-        return Int(sv.contentOffset.x/sw)
+        return Int(co/sw)
     }
     // MARK: 3D touch
     
@@ -178,7 +179,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
     
     // MARK: UIViewControllerPreviewingDelegate methods
     func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
-        //if currentPage() == 0 || currentPage() == 5 { return nil }
+        if currentPage() == 0 || currentPage() == 5 { return nil }
         
         var selectedlayer = CAShapeLayer()
         var hit = false
@@ -197,7 +198,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
         
         detailVC.preferredContentSize = CGSize(width: 0.0, height: 190)
         detailVC.index = selectedlayer.valueForKey("index") as! Int
-        detailVC.section = currentPage()
+        detailVC.section = currentPage() - 1
         previewingContext.sourceRect = selectedlayer.frame
         
         return detailVC
@@ -208,5 +209,33 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerPr
         showViewController(viewControllerToCommit, sender: self)
         
     }
+    
+    // MARK: REMOVE BEFORE SUBMISSION
+//    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        let touch = touches.first
+//        let location = touch!.locationInView(self.view)
+//        print(location)
+//        if currentPage() == 0 || currentPage() == 5 { return }
+//        
+//        var selectedlayer = CAShapeLayer()
+//        var hit = false
+//        for i in hex {
+//            if (i.hitTest(location) != nil) {
+//                selectedlayer = i
+//                hit = true
+//                break
+//            }
+//        }
+//        if hit == false { return }
+//        
+//        print(selectedlayer.debugDescription)
+//        
+//        guard let detailVC = storyboard?.instantiateViewControllerWithIdentifier("dvc") as? DetailViewController else { return }
+//        
+//        detailVC.preferredContentSize = CGSize(width: 0.0, height: 190)
+//        detailVC.index = selectedlayer.valueForKey("index") as! Int
+//        detailVC.section = currentPage() - 1
+//        self.navigationController?.pushViewController(detailVC, animated: true)
+//    }
 }
 

@@ -50,6 +50,6 @@
         </view>
     </objects>
     <resources>
-        <image name="wwdc16-og" width="1200" height="1200"/>
+        <image name="wwdc16-og" width="400" height="400"/>
     </resources>
 </document>

@@ -28,8 +28,8 @@ class HexManager: NSObject {
         a.append(CGPoint(x: sw/2+sqrt(3)*s/2, y: sh/2-s/2))
         a.append(CGPoint(x: sw/2+sqrt(3)*s/2, y: sh/2+s/2))
         a.append(CGPoint(x: sw/2, y: sh/2+s))
-        a.append(CGPoint(x: sw/2-sqrt(3)*s/2, y: sh/2-s/2))
         a.append(CGPoint(x: sw/2-sqrt(3)*s/2, y: sh/2+s/2))
+        a.append(CGPoint(x: sw/2-sqrt(3)*s/2, y: sh/2-s/2))
         return a
     }
     
