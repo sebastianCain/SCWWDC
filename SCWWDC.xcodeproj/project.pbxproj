@@ -15,7 +15,6 @@
 		383D4A721CCF00A900D7FBD8 /* ComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A711CCF00A900D7FBD8 /* ComponentViewController.swift */; };
 		383D4A7B1CD02B6B00D7FBD8 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 383D4A781CD02B6B00D7FBD8 /* art.scnassets */; };
 		383D4A7C1CD02B6B00D7FBD8 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A7A1CD02B6B00D7FBD8 /* GameViewController.m */; };
-		383D4A7F1CD0627F00D7FBD8 /* PocketSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 383D4A7D1CD0627F00D7FBD8 /* PocketSVG.m */; };
 		387850961CB8E23400E50BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850951CB8E23400E50BD8 /* AppDelegate.swift */; };
 		387850981CB8E23400E50BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387850971CB8E23400E50BD8 /* ViewController.swift */; };
 		3878509B1CB8E23400E50BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387850991CB8E23400E50BD8 /* Main.storyboard */; };
@@ -45,8 +44,6 @@
 		383D4A781CD02B6B00D7FBD8 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		383D4A791CD02B6B00D7FBD8 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		383D4A7A1CD02B6B00D7FBD8 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		383D4A7D1CD0627F00D7FBD8 /* PocketSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketSVG.m; sourceTree = "<group>"; };
-		383D4A7E1CD0627F00D7FBD8 /* PocketSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
 		387850921CB8E23400E50BD8 /* SCWWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCWWDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387850951CB8E23400E50BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		387850971CB8E23400E50BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,15 +87,6 @@
 			name = SceneKit;
 			sourceTree = "<group>";
 		};
-		383D4A801CD0669400D7FBD8 /* SVG */ = {
-			isa = PBXGroup;
-			children = (
-				383D4A7E1CD0627F00D7FBD8 /* PocketSVG.h */,
-				383D4A7D1CD0627F00D7FBD8 /* PocketSVG.m */,
-			);
-			name = SVG;
-			sourceTree = "<group>";
-		};
 		387850891CB8E23400E50BD8 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +106,6 @@
 		387850941CB8E23400E50BD8 /* SCWWDC */ = {
 			isa = PBXGroup;
 			children = (
-				383D4A801CD0669400D7FBD8 /* SVG */,
 				387850C01CB979A500E50BD8 /* SCWWDC-Bridging-Header.h */,
 				387850951CB8E23400E50BD8 /* AppDelegate.swift */,
 				387850971CB8E23400E50BD8 /* ViewController.swift */,
@@ -262,7 +249,6 @@
 				383D4A7C1CD02B6B00D7FBD8 /* GameViewController.m in Sources */,
 				383D4A721CCF00A900D7FBD8 /* ComponentViewController.swift in Sources */,
 				38F108D61CD1797500648170 /* PathExtensions.swift in Sources */,
-				383D4A7F1CD0627F00D7FBD8 /* PocketSVG.m in Sources */,
 				38B7A3301CD303BA00C130C1 /* Data.swift in Sources */,
 				383D4A5A1CCEB2A400D7FBD8 /* UILabel+DrawAnimation.m in Sources */,
 				38B7A3371CD47D2A00C130C1 /* FinalViewController.swift in Sources */,
